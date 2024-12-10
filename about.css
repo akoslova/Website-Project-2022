@@ -67,6 +67,7 @@ a {
     margin: 5px;
     font-size: 22px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 2;
 }
 
 .dropdown li + li {
@@ -152,29 +153,23 @@ input[type=checkbox]{
     }
 }
 
-/* Banner */
+/* Lines */
 
-h1 {
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    color: rgba(16,99,150,255);
-    text-shadow: 2px 1px #a3b7cc;
-    font-size: 40px;
-    margin-top: 15px;
-    margin-bottom: 50px;
+.line {
+    height: 6px;
+    background-color: rgba(46,134,150,255);
+    border-radius: 2px;
 }
 
-/* Section */
+/*Text*/
 
-
-.text {
+section {
     float: none;
     padding-top: 30px;
     margin: 65px;
     margin-top: 55px;
     background: rgb(217, 237, 238);
     border: 5px solid rgba(46,134,150,255);
-    position: relative;
 }
 
 h2 {
@@ -186,29 +181,38 @@ h2 {
     text-align: center;
     font-size: 30px;
     margin-bottom: 30px;
-    margin-top: 30px;
+    margin-top: 15px;
     color: rgba(16,99,150,255);
     text-shadow: 2px 1px #a3b7cc;
 }
 
 p {
     font-size: 17px;
-    margin-bottom: 30px;
     font-family: 'Montserrat', sans-serif;
     line-height: 1.5;
     text-align: justify;
+    padding: 30px;
 }
 
+/*Video*/
 
-/* Lines */
-
-.line {
-    height: 6px;
-    background-color: rgba(46,134,150,255);
-    border-radius: 2px;
+iframe {
+    width: 650px;
+    height: 315px;
 }
 
-/*Pictures*/
+.video {
+    position: absolute;
+    margin: auto;
+    margin-top: 200px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.text {
+    margin-top: 400px;
+}
 
 .pic {
     display: flex;
@@ -218,61 +222,8 @@ p {
 }
 
 .pic img {
-    width: 70%;
+    width: 50%;
     height: 50%;
-}
-
-/*Video*/
-
-iframe {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    padding: 100px;
-    padding-left: 130px;
-    padding-right: 130px;
-}
-
-.video {
-    text-align: center;
-    position: relative;
-    padding-bottom: calc(var(--aspect-ratio, .5625) * 100%);
-    height: 0;
-}
-
-/*Text*/
-
-.text {
-    float: none;
-    padding-top: 30px;
-    margin: 65px;
-    margin-top: 55px;
-    background: rgb(217, 237, 238);
-    border: 5px solid rgba(46,134,150,255);
-}
-
-h2 {
-    font-family: 'Permanent Marker';
-}
-
-
-h2 {
-    text-align: center;
-    font-size: 30px;
-    margin-bottom: 30px;
-    margin-top: 15px;
-    color: rgba(16,99,150,255);
-    text-shadow: 2px 1px #a3b7cc;
-}
-
-p {
-    font-size: 17px;
-    font-family: 'Montserrat', sans-serif;
-    line-height: 1.5;
-    text-align: justify;
-    padding-left: 30px;
-    padding-right: 30px;
 }
 
 /*Bottom*/
